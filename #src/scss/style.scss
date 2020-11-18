@@ -262,3 +262,17 @@ p {
 .is-disabled {
   background-color: #000000;
 }
+
+.footer {
+  &__container {
+    background-color: #1f2021;
+    color: #ffffff;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right-elements {
+    display: flex;
+    flex-direction: column;
+  }
+}

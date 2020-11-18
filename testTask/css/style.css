@@ -292,6 +292,19 @@ p {
 .is-disabled {
   background-color: #000000;
 }
+
+.footer__container {
+  background-color: #1f2021;
+  color: #ffffff;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__right-elements {
+  display: flex;
+  flex-direction: column;
+}
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
 .catalog__container::before{background-image:url(../img/icons/up-arrow.svg)}
