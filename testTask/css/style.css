@@ -305,7 +305,7 @@ h5 {
 .footer__container {
   background-color: #1f2021;
   color: #ffffff;
-  padding: 85px 80px;
+  padding: 85px 78px 89px 80px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 114px;
@@ -318,6 +318,67 @@ h5 {
 .footer__right-elements {
   display: flex;
   flex-direction: column;
+  margin-top: 6px;
+  min-width: 564px;
+}
+
+.footer__right-elements .right-elements__top input,
+.footer__right-elements .right-elements__top button {
+  padding: 23px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.footer__right-elements .right-elements__top input {
+  min-width: 300px;
+  padding-left: 30px;
+}
+
+.footer__right-elements .right-elements__top button {
+  min-width: 250px;
+  margin-left: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #6ebbd3;
+}
+
+.footer__right-elements .right-elements__bottom {
+  margin-top: 19px;
+}
+
+.footer__right-elements .right-elements__bottom input[type="checkbox"] {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.footer__right-elements .right-elements__bottom label {
+  margin-left: 12px;
+  position: relative;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer__right-elements .right-elements__bottom label::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 18px;
+  height: 18px;
+  top: 0px;
+  left: -37px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.footer__right-elements .right-elements__bottom input:checked + label:before {
+  content: "";
+  border: none;
+  background-color: #6ebbd3;
+  background-image: url(../img/icons/check.svg);
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .footer__title {
@@ -333,4 +394,5 @@ h5 {
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
 .catalog__container::before{background-image:url(../img/icons/up-arrow.svg)}
+.footer__right-elements .right-elements__bottom input:checked + label:before{background-image:url(../img/icons/check.svg)}
 }
