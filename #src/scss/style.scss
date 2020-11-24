@@ -176,6 +176,23 @@ h5 {
     max-width: 380px;
     background-color: #f3f3f3;
     margin-bottom: 24px;
+    .fa-heart::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/icons/like.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 46px;
+      height: 46px;
+      z-index: 3;
+      top: 34px;
+      right: 32px;
+      cursor: pointer;
+    }
+    .fa-heart:hover::after {
+      background-image: url(../img/icons/like--is-active.svg);
+    }
     &--before::before {
       content: "-40%";
       position: absolute;
@@ -192,13 +209,7 @@ h5 {
       border-radius: 10px;
     }
   }
-  &__icon {
-    position: absolute;
-    z-index: 3;
-    top: 34px;
-    right: 32px;
-    cursor: pointer;
-  }
+
   &__content {
     padding: 25px 28px 22px 29px;
   }
@@ -252,7 +263,7 @@ h5 {
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
-    &:hover {
+    &:not(.is-disabled):hover {
       background-color: rgba($color: #6ebbd3, $alpha: 0.8);
     }
   }

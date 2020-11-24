@@ -198,6 +198,25 @@ h5 {
   margin-bottom: 24px;
 }
 
+.products__item .fa-heart::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icons/like.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 46px;
+  height: 46px;
+  z-index: 3;
+  top: 34px;
+  right: 32px;
+  cursor: pointer;
+}
+
+.products__item .fa-heart:hover::after {
+  background-image: url(../img/icons/like--is-active.svg);
+}
+
 .products__item--before::before {
   content: "-40%";
   position: absolute;
@@ -212,14 +231,6 @@ h5 {
   text-align: center;
   padding: 10px 0px;
   border-radius: 10px;
-}
-
-.products__icon {
-  position: absolute;
-  z-index: 3;
-  top: 34px;
-  right: 32px;
-  cursor: pointer;
 }
 
 .products__content {
@@ -286,7 +297,7 @@ h5 {
   font-size: 16px;
 }
 
-.products__btn:hover {
+.products__btn:not(.is-disabled):hover {
   background-color: rgba(110, 187, 211, 0.8);
 }
 
@@ -416,5 +427,7 @@ h5 {
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
 .catalog__container::before{background-image:url(../img/icons/up-arrow.svg)}
+.products__item .fa-heart::after{background-image:url(../img/icons/like.svg)}
+.products__item .fa-heart:hover::after{background-image:url(../img/icons/like--is-active.svg)}
 .check__input:checked + .check__box{background-image:url(../img/icons/check-mark.svg)}
 }
