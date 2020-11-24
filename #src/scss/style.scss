@@ -138,6 +138,9 @@ h5 {
       height: 59px;
       cursor: pointer;
     }
+    &:hover::before {
+      background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+    }
   }
   &__sorting {
     display: flex;
@@ -249,6 +252,9 @@ h5 {
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
+    &:hover {
+      background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+    }
   }
 }
 .btn {
@@ -303,42 +309,13 @@ h5 {
         font-weight: 700;
         color: #ffffff;
         background-color: #6ebbd3;
+        &:hover {
+          background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+        }
       }
     }
     .right-elements__bottom {
       margin-top: 19px;
-      input {
-        &[type="checkbox"] {
-          visibility: hidden;
-          opacity: 0;
-        }
-      }
-      label {
-        margin-left: 12px;
-        position: relative;
-        font-size: 14px;
-        font-family: "Montserrat", sans-serif;
-        &::before {
-          content: "";
-          position: absolute;
-          background-color: #ffffff;
-          width: 18px;
-          height: 18px;
-          top: 0px;
-          left: -37px;
-          cursor: pointer;
-          border-radius: 4px;
-        }
-      }
-      input:checked + label:before {
-        content: "";
-        border: none;
-        background-color: #6ebbd3;
-        background-image: url(../img/icons/check.svg);
-        background-position: 5px 5px;
-        background-repeat: no-repeat;
-        background-size: auto;
-      }
     }
   }
   &__title {
@@ -349,5 +326,44 @@ h5 {
   &__discription {
     font-size: 28px;
     line-height: 29px;
+  }
+}
+
+.check {
+  padding-left: 30px;
+  font-size: 14px;
+  cursor: pointer;
+
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  &__box {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -30px;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+  &__input:checked + &__box {
+    background-color: #6ebbd3;
+    background-image: url(../img/icons/check-mark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  &__input:focus + &__box {
+    box-shadow: 0 0 0 2px#6ebbd3;
+  }
+  &__input:checked:focus + &__box {
+    box-shadow: 0 0 0 2px #ffffff;
+  }
+  &__input:disabled + &__box {
+    background-color: #9b9b9b;
   }
 }

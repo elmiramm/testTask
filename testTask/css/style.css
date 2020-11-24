@@ -153,6 +153,10 @@ h5 {
   cursor: pointer;
 }
 
+.catalog__container:hover::before {
+  background-color: rgba(110, 187, 211, 0.8);
+}
+
 .catalog__sorting {
   display: flex;
   justify-content: flex-start;
@@ -282,6 +286,10 @@ h5 {
   font-size: 16px;
 }
 
+.products__btn:hover {
+  background-color: rgba(110, 187, 211, 0.8);
+}
+
 .btn {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
@@ -343,42 +351,12 @@ h5 {
   background-color: #6ebbd3;
 }
 
+.footer__right-elements .right-elements__top button:hover {
+  background-color: rgba(110, 187, 211, 0.8);
+}
+
 .footer__right-elements .right-elements__bottom {
   margin-top: 19px;
-}
-
-.footer__right-elements .right-elements__bottom input[type="checkbox"] {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.footer__right-elements .right-elements__bottom label {
-  margin-left: 12px;
-  position: relative;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.footer__right-elements .right-elements__bottom label::before {
-  content: "";
-  position: absolute;
-  background-color: #ffffff;
-  width: 18px;
-  height: 18px;
-  top: 0px;
-  left: -37px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.footer__right-elements .right-elements__bottom input:checked + label:before {
-  content: "";
-  border: none;
-  background-color: #6ebbd3;
-  background-image: url(../img/icons/check.svg);
-  background-position: 5px 5px;
-  background-repeat: no-repeat;
-  background-size: auto;
 }
 
 .footer__title {
@@ -391,8 +369,52 @@ h5 {
   font-size: 28px;
   line-height: 29px;
 }
+
+.check {
+  padding-left: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check__box {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: -30px;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.check__input:checked + .check__box {
+  background-color: #6ebbd3;
+  background-image: url(../img/icons/check-mark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.check__input:focus + .check__box {
+  box-shadow: 0 0 0 2px #6ebbd3;
+}
+
+.check__input:checked:focus + .check__box {
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+.check__input:disabled + .check__box {
+  background-color: #9b9b9b;
+}
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
 .catalog__container::before{background-image:url(../img/icons/up-arrow.svg)}
-.footer__right-elements .right-elements__bottom input:checked + label:before{background-image:url(../img/icons/check.svg)}
+.check__input:checked + .check__box{background-image:url(../img/icons/check-mark.svg)}
 }
