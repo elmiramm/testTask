@@ -115,6 +115,32 @@ h5 {
 .list {
   display: flex;
   justify-content: space-between;
+  &__item {
+    position: relative;
+  }
+  &__item-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: auto;
+    right: 0;
+    background-color: #6ebbd3;
+    height: 2px;
+    bottom: 0;
+    transition: all 0.3s;
+  }
+  &__item-link:hover {
+    color: #6ebbd3;
+    &::before {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+  &__item-link:focus {
+    color: #6ebbd3;
+    outline: none;
+  }
 }
 
 .catalog {
@@ -263,8 +289,10 @@ h5 {
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
-    &:not(.is-disabled):hover {
+    &:not(.is-disabled):hover,
+    &:focus {
       background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+      outline: none;
     }
   }
 }
@@ -320,8 +348,10 @@ h5 {
         font-weight: 700;
         color: #ffffff;
         background-color: #6ebbd3;
-        &:hover {
+        &:hover,
+        &:focus {
           background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+          outline: none;
         }
       }
     }
