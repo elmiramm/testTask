@@ -167,6 +167,10 @@ h5 {
       }
     }
   }
+  .display--none {
+    visibility: hidden;
+    opacity: 0;
+  }
   &__sorting {
     display: flex;
     justify-content: flex-start;

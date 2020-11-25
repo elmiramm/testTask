@@ -187,6 +187,11 @@ h5 {
   background-color: rgba(110, 187, 211, 0.8);
 }
 
+.catalog .display--none {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .catalog__sorting {
   display: flex;
   justify-content: flex-start;
