@@ -169,8 +169,7 @@ h5 {
   position: relative;
 }
 
-.catalog__container::before {
-  content: "";
+.catalog__container .fa-up-arrow {
   background-image: url(../img/icons/up-arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -184,7 +183,7 @@ h5 {
   cursor: pointer;
 }
 
-.catalog__container:hover::before {
+.catalog__container .fa-up-arrow:hover {
   background-color: rgba(110, 187, 211, 0.8);
 }
 
@@ -461,7 +460,7 @@ h5 {
 }
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
-.catalog__container::before{background-image:url(../img/icons/up-arrow.svg)}
+.catalog__container .fa-up-arrow{background-image:url(../img/icons/up-arrow.svg)}
 .products__item .fa-heart::after{background-image:url(../img/icons/like.svg)}
 .products__item .fa-heart:hover::after{background-image:url(../img/icons/like--is-active.svg)}
 .check__input:checked + .check__box{background-image:url(../img/icons/check-mark.svg)}

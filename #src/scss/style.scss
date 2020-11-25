@@ -150,8 +150,7 @@ h5 {
     align-items: center;
     margin-bottom: 47px;
     position: relative;
-    &::before {
-      content: "";
+    .fa-up-arrow {
       background-image: url(../img/icons/up-arrow.svg);
       background-position: center;
       background-repeat: no-repeat;
@@ -163,9 +162,9 @@ h5 {
       width: 59px;
       height: 59px;
       cursor: pointer;
-    }
-    &:hover::before {
-      background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+      &:hover {
+        background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+      }
     }
   }
   &__sorting {
