@@ -1,53 +1,33 @@
 ; (function () {
   let body = document.querySelector('body');
 
-  window.addEventListener('load', function () {
+  window.addEventListener('load', isVisuallyHidden);
+  window.addEventListener('resize', isVisuallyHidden);
+  window.addEventListener('scroll', isVisuallyHidden);
 
-    const windowInnerHeight = window.innerHeight;
+  let arrowUp = document.querySelector('.fa-up-arrow');
 
-    let arrowUp = document.querySelector('.fa-up-arrow');
+  function isVisuallyHidden() {
+
+    let windowInnerHeight = window.innerHeight || document.documentElement.scrollTop;
     let scrollTop = window.pageYOffset;
+    let scrollBottom = windowInnerHeight + scrollTop;
+
     let heightOfArrowUp = arrowUp.getBoundingClientRect().top + scrollTop;
 
-    console.log(windowInnerHeight);
-    console.log(heightOfArrowUp);
+    let isdisplayNone = arrowUp.classList.contains('display--none');
 
-    let displayNoneOrNot = arrowUp.classList.contains('display--none');
-
-    if (displayNoneOrNot) {
-      if (windowInnerHeight >= heightOfArrowUp) {
-        arrowUp.classList.remove('display--none');
-      }
-    } else {
-      if (windowInnerHeight >= heightOfArrowUp) {
-        arrowUp.classList.add('display--none');
-      }
+    
+    if (scrollTop === 0 && heightOfArrowUp <= scrollBottom && isdisplayNone === false) {
+      arrowUp.classList.add('display--none');
     }
-  })
-
-  window.addEventListener('resize', function () {
-
-    const windowInnerHeight = window.innerHeight;
-
-    let arrowUp = document.querySelector('.fa-up-arrow');
-    let scrollTop = window.pageYOffset;
-    let heightOfArrowUp = arrowUp.getBoundingClientRect().top + scrollTop;
-
-    console.log(windowInnerHeight);
-    console.log(heightOfArrowUp);
-
-    let displayNoneOrNot = arrowUp.classList.contains('display--none');
-
-    if (displayNoneOrNot) {
-      if (windowInnerHeight >= heightOfArrowUp) {
-        arrowUp.classList.remove('display--none');
-      }
-    } else {
-      if (windowInnerHeight >= heightOfArrowUp) {
-        arrowUp.classList.add('display--none');
-      }
+    else if (scrollTop === 0 && heightOfArrowUp >= scrollBottom && isdisplayNone === true) {
+      arrowUp.classList.remove('display--none');
     }
-  })
+    else if (scrollTop !== 0 && heightOfArrowUp <= scrollBottom && isdisplayNone === true) {
+      arrowUp.classList.remove('display--none');
+    }
+  }
 
   var scroll = function (target) {
     var targetTop = target.getBoundingClientRect().top;
