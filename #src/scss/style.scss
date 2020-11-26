@@ -150,27 +150,26 @@ h5 {
     align-items: center;
     margin-bottom: 47px;
     position: relative;
-    .fa-up-arrow {
+    .up-btn {
+      position: absolute;
+      background-color: #6ebbd3;
       background-image: url(../img/icons/up-arrow.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: auto;
-      position: absolute;
-      background-color: #6ebbd3;
       bottom: 1px;
       right: 51px;
       width: 59px;
       height: 59px;
       cursor: pointer;
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+        outline: none;
       }
     }
   }
-  .display--none {
-    visibility: hidden;
-    opacity: 0;
-  }
+
   &__sorting {
     display: flex;
     justify-content: flex-start;
@@ -185,6 +184,7 @@ h5 {
 .sorting {
   &__by-item {
     margin-left: -2px;
+    position: relative;
     &--bold {
       font-weight: 700;
     }
@@ -194,6 +194,19 @@ h5 {
   }
   &__icon {
     vertical-align: middle;
+  }
+  &__choose-box {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    right: -10px;
+    min-width: 150px;
+    z-index: 3;
   }
 }
 .products {
@@ -212,8 +225,8 @@ h5 {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      width: 46px;
-      height: 46px;
+      width: 48px;
+      height: 48px;
       z-index: 3;
       top: 34px;
       right: 32px;
@@ -284,11 +297,10 @@ h5 {
   }
   &__btn {
     width: 100%;
-    border: none;
+
     padding: 21px 0px 24px;
     border-radius: 0px 0px 10px 10px;
     margin-top: 7px;
-    background-color: #6ebbd3;
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
@@ -302,6 +314,8 @@ h5 {
 .btn {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+  background-color: #6ebbd3;
+  border: none;
 }
 .more-items__btn {
   border-radius: 10px;
@@ -350,7 +364,6 @@ h5 {
         margin-left: 13px;
         font-weight: 700;
         color: #ffffff;
-        background-color: #6ebbd3;
         &:hover,
         &:focus {
           background-color: rgba($color: #6ebbd3, $alpha: 0.8);
@@ -379,11 +392,7 @@ h5 {
   cursor: pointer;
 
   &__input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+    visibility: visible;
   }
   &__box {
     position: absolute;
@@ -410,4 +419,19 @@ h5 {
   &__input:disabled + &__box {
     background-color: #9b9b9b;
   }
+}
+
+.visibility-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }

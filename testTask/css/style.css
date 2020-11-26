@@ -169,13 +169,13 @@ h5 {
   position: relative;
 }
 
-.catalog__container .fa-up-arrow {
+.catalog__container .up-btn {
+  position: absolute;
+  background-color: #6ebbd3;
   background-image: url(../img/icons/up-arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  position: absolute;
-  background-color: #6ebbd3;
   bottom: 1px;
   right: 51px;
   width: 59px;
@@ -183,13 +183,10 @@ h5 {
   cursor: pointer;
 }
 
-.catalog__container .fa-up-arrow:hover {
+.catalog__container .up-btn:hover,
+.catalog__container .up-btn:focus {
   background-color: rgba(110, 187, 211, 0.8);
-}
-
-.catalog .display--none {
-  visibility: hidden;
-  opacity: 0;
+  outline: none;
 }
 
 .catalog__sorting {
@@ -206,6 +203,7 @@ h5 {
 
 .sorting__by-item {
   margin-left: -2px;
+  position: relative;
 }
 
 .sorting__by-item--bold {
@@ -218,6 +216,20 @@ h5 {
 
 .sorting__icon {
   vertical-align: middle;
+}
+
+.sorting__choose-box {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  position: absolute;
+  background-color: #000000;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  right: -10px;
+  min-width: 150px;
+  z-index: 3;
 }
 
 .products {
@@ -240,8 +252,8 @@ h5 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   z-index: 3;
   top: 34px;
   right: 32px;
@@ -322,11 +334,9 @@ h5 {
 
 .products__btn {
   width: 100%;
-  border: none;
   padding: 21px 0px 24px;
   border-radius: 0px 0px 10px 10px;
   margin-top: 7px;
-  background-color: #6ebbd3;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
@@ -341,6 +351,8 @@ h5 {
 .btn {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+  background-color: #6ebbd3;
+  border: none;
 }
 
 .more-items__btn {
@@ -396,7 +408,6 @@ h5 {
   margin-left: 13px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #6ebbd3;
 }
 
 .footer__right-elements .right-elements__top button:hover,
@@ -427,11 +438,7 @@ h5 {
 }
 
 .check__input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+  visibility: visible;
 }
 
 .check__box {
@@ -463,9 +470,25 @@ h5 {
 .check__input:disabled + .check__box {
   background-color: #9b9b9b;
 }
+
+.visibility-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
-.catalog__container .fa-up-arrow{background-image:url(../img/icons/up-arrow.svg)}
+.catalog__container .up-btn{background-image:url(../img/icons/up-arrow.svg)}
 .products__item .fa-heart::after{background-image:url(../img/icons/like.svg)}
 .products__item .fa-heart:hover::after{background-image:url(../img/icons/like--is-active.svg)}
 .check__input:checked + .check__box{background-image:url(../img/icons/check-mark.svg)}
