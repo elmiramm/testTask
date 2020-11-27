@@ -45,7 +45,24 @@
   }
 
 
-  window.addEventListener('load', isVisibilityHidden);
+  window.addEventListener('load', function () {
+
+    isVisibilityHidden();
+
+    let catalog = document.querySelector('.catalog__products');
+
+
+    let productsBtn = catalog.querySelectorAll('.products__btn');
+
+    for (let i = 0; i < productsBtn.length; i++) {
+      let current = productsBtn[i];
+
+      if (current.classList.contains('is-disabled')) {
+        current.textContent = 'Продан';
+      }
+    }
+  });
+
   window.addEventListener('resize', isVisibilityHidden);
   window.addEventListener('scroll', isVisibilityHidden);
 
