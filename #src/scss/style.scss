@@ -164,7 +164,7 @@ h5 {
       cursor: pointer;
       &:hover,
       &:focus {
-        background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+        background-color: rgba($color: #183c4e, $alpha: 0.8);
         outline: none;
       }
     }
@@ -194,6 +194,9 @@ h5 {
   }
   &__icon {
     vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
   &__choose-box {
     display: flex;
@@ -218,23 +221,39 @@ h5 {
     max-width: 380px;
     background-color: #f3f3f3;
     margin-bottom: 24px;
-    .fa-heart::after {
-      content: "";
+    .like-btn {
       position: absolute;
+      background-color: transparent;
+      border: none;
       background-image: url(../img/icons/like.svg);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
-      width: 48px;
-      height: 48px;
-      z-index: 3;
+      background-size: auto;
+      width: 46px;
+      height: 42px;
       top: 34px;
       right: 32px;
       cursor: pointer;
+
+      &:hover {
+        background-image: url(../img/icons/like--is-hover.svg);
+      }
+
+      &:focus {
+        background-image: url(../img/icons/like--is-focus.svg);
+        outline: none;
+      }
+
+      &--is-active,
+      &--is-active:hover {
+        background-image: url(../img/icons/like--is-active.svg);
+      }
+      &--is-active:focus {
+        background-image: url(../img/icons/like--is-active-focus.svg);
+        outline: none;
+      }
     }
-    .fa-heart:hover::after {
-      background-image: url(../img/icons/like--is-active.svg);
-    }
+
     &--before::before {
       content: "-40%";
       position: absolute;
@@ -306,7 +325,7 @@ h5 {
     font-size: 16px;
     &:not(.is-disabled):hover,
     &:focus {
-      background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+      background-color: #183c4e;
       outline: none;
     }
   }
@@ -366,7 +385,7 @@ h5 {
         color: #ffffff;
         &:hover,
         &:focus {
-          background-color: rgba($color: #6ebbd3, $alpha: 0.8);
+          background-color: #183c4e;
           outline: none;
         }
       }

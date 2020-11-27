@@ -2,7 +2,17 @@
   let body = document.querySelector('body');
   let arrowUp = document.querySelector('.up-btn');
 
-  // функция удаляет/добавляет класс visibility-hidden элементу arrowUp в зависимости от дальности элемента arrowUp от начала страницы
+  let closestItemByClass = function (item, className) {
+    let node = item;
+    while (node) {
+      if (node.classList.contains(className)) {
+        return node;
+      }
+      node = node.parentElement;
+    }
+    return null;
+  }
+
   function isVisibilityHidden() {
 
     let windowInnerHeight = window.innerHeight || document.documentElement.scrollTop;
@@ -21,9 +31,7 @@
       arrowUp.classList.remove('visibility-hidden');
     }
   }
-  // isVisibilityHidden ____END_____
 
-  // функция скролит страницу на начало при клике на target (arrowUp)
   let scroll = function (target) {
     let targetTop = target.getBoundingClientRect().top;
     let scrollTop = window.pageYOffset;
@@ -35,28 +43,42 @@
       }
     );
   }
-  // scroll ____END_____
 
 
   window.addEventListener('load', isVisibilityHidden);
   window.addEventListener('resize', isVisibilityHidden);
   window.addEventListener('scroll', isVisibilityHidden);
 
+  document.addEventListener('mousedown', e => e.preventDefault())
+
   body.addEventListener('click', function (e) {
     let target = e.target;
     let scrollToItemClass = target.getAttribute('data-scroll-to');
+    let arrowDownButton = closestItemByClass(target, 'sorting__icon');
+    let likeButton = closestItemByClass(target, 'like-btn');
 
-    if (scrollToItemClass === null) {
-      return null;
+    console.log(likeButton);
+
+    if (scrollToItemClass !== null) {
+      e.preventDefault();
+
+      let scrollToItem = document.querySelector('.' + scrollToItemClass);
+
+      if (scrollToItem) {
+        scroll(scrollToItem);
+      }
+    }
+    if (arrowDownButton) {
+      let parentBlockSortingByItem = closestItemByClass(target, 'sorting__by-item');
+
+      let chooseList = parentBlockSortingByItem.querySelector('.sorting__choose-box');
+
+      chooseList.classList.toggle('visibility-hidden');
+    }
+    if (likeButton) {
+      likeButton.classList.toggle('like-btn--is-active');
     }
 
-    e.preventDefault();
 
-    let scrollToItem = document.querySelector('.' + scrollToItemClass);
-
-    if (scrollToItem) {
-      scroll(scrollToItem);
-
-    }
   })
 })();

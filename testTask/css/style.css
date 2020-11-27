@@ -185,7 +185,7 @@ h5 {
 
 .catalog__container .up-btn:hover,
 .catalog__container .up-btn:focus {
-  background-color: rgba(110, 187, 211, 0.8);
+  background-color: rgba(24, 60, 78, 0.8);
   outline: none;
 }
 
@@ -216,6 +216,9 @@ h5 {
 
 .sorting__icon {
   vertical-align: middle;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .sorting__choose-box {
@@ -245,23 +248,38 @@ h5 {
   margin-bottom: 24px;
 }
 
-.products__item .fa-heart::after {
-  content: "";
+.products__item .like-btn {
   position: absolute;
+  background-color: transparent;
+  border: none;
   background-image: url(../img/icons/like.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 48px;
-  height: 48px;
-  z-index: 3;
+  background-size: auto;
+  width: 46px;
+  height: 42px;
   top: 34px;
   right: 32px;
   cursor: pointer;
 }
 
-.products__item .fa-heart:hover::after {
+.products__item .like-btn:hover {
+  background-image: url(../img/icons/like--is-hover.svg);
+}
+
+.products__item .like-btn:focus {
+  background-image: url(../img/icons/like--is-focus.svg);
+  outline: none;
+}
+
+.products__item .like-btn--is-active,
+.products__item .like-btn--is-active:hover {
   background-image: url(../img/icons/like--is-active.svg);
+}
+
+.products__item .like-btn--is-active:focus {
+  background-image: url(../img/icons/like--is-active-focus.svg);
+  outline: none;
 }
 
 .products__item--before::before {
@@ -344,7 +362,7 @@ h5 {
 
 .products__btn:not(.is-disabled):hover,
 .products__btn:focus {
-  background-color: rgba(110, 187, 211, 0.8);
+  background-color: #183c4e;
   outline: none;
 }
 
@@ -412,7 +430,7 @@ h5 {
 
 .footer__right-elements .right-elements__top button:hover,
 .footer__right-elements .right-elements__top button:focus {
-  background-color: rgba(110, 187, 211, 0.8);
+  background-color: #183c4e;
   outline: none;
 }
 
@@ -489,7 +507,10 @@ h5 {
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
 .catalog__container .up-btn{background-image:url(../img/icons/up-arrow.svg)}
-.products__item .fa-heart::after{background-image:url(../img/icons/like.svg)}
-.products__item .fa-heart:hover::after{background-image:url(../img/icons/like--is-active.svg)}
+.products__item .like-btn{background-image:url(../img/icons/like.svg)}
+.products__item .like-btn:hover{background-image:url(../img/icons/like--is-hover.svg)}
+.products__item .like-btn:focus{background-image:url(../img/icons/like--is-focus.svg)}
+.products__item .like-btn--is-active,.products__item .like-btn--is-active:hover{background-image:url(../img/icons/like--is-active.svg)}
+.products__item .like-btn--is-active:focus{background-image:url(../img/icons/like--is-active-focus.svg)}
 .check__input:checked + .check__box{background-image:url(../img/icons/check-mark.svg)}
 }
