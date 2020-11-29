@@ -199,17 +199,29 @@ h5 {
     cursor: pointer;
   }
   &__choose-box {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
     position: absolute;
-    background-color: #000000;
+    padding: 10px 0px;
+    background-color: #f3f3f3;
     border-radius: 4px;
-    color: #ffffff;
-    font-size: 14px;
+    color: #183c4e;
+    font-size: 16px;
     right: -10px;
-    min-width: 150px;
+    min-width: 170px;
     z-index: 3;
+    .radio__input:checked + .radio__text {
+      font-weight: 700;
+    }
+  }
+  &__by-text {
+    & label {
+      display: inline-block;
+      padding: 5px 10px;
+      width: 100%;
+    }
+    :hover {
+      background-color: #183c4e;
+      color: #ffffff;
+    }
   }
 }
 .products {
@@ -410,9 +422,6 @@ h5 {
   font-size: 14px;
   cursor: pointer;
 
-  &__input {
-    visibility: visible;
-  }
   &__box {
     position: absolute;
     margin-top: 4px;
@@ -422,6 +431,7 @@ h5 {
     border-radius: 4px;
     background-color: #ffffff;
   }
+
   &__input:checked + &__box {
     background-color: #6ebbd3;
     background-image: url(../img/icons/check-mark.svg);

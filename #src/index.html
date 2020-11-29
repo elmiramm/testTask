@@ -40,28 +40,52 @@
 
   <section class="catalog">
     <div class="container catalog__container">
+
       <nav class="catalog__sorting">
         <p class="sorting__by-item sorting__by-item--bold">Сортировать по&#058;</p>
+
         <div class="sorting__by-item">
+
           <span class="sorting__text">Цене</span>
           <button class="sorting__icon">
             <img src="img/icons/down-arrow.svg" alt="Выбрать">
           </button>
           <ul class="sorting__choose-box">
-            <li class="sorting__by-text ascending">по возрастанию</li>
-            <li class="sorting__by-text descending">по убыванию</li>
+            <li class="sorting__by-text ">
+              <label>
+                <input class="radio__input ascending visually-hidden" type="radio" name="sorting-by-price" checked>
+                <span class="radio__text ">по возрастанию</span>
+              </label>
+            </li>
+            <li class="sorting__by-text ">
+              <label>
+                <input class="radio__input descending visually-hidden" type="radio" name="sorting-by-price">
+                <span class="radio__text ">по убыванию</span>
+              </label>
+            </li>
           </ul>
-
         </div>
+
         <div class="sorting__by-item">
           <span class="sorting__text">Возрасту</span>
           <button class="sorting__icon">
             <img src="img/icons/down-arrow.svg" alt="Выбрать">
           </button>
           <ul class="sorting__choose-box">
-            <li class="sorting__by-text ascending">по возрастанию</li>
-            <li class="sorting__by-text descending">по убыванию</li>
+            <li class="sorting__by-text ">
+              <label>
+                <input class="radio__input ascending visually-hidden" type="radio" name="sorting-by-age" checked>
+                <span class="radio__text">по возрастанию</span>
+              </label>
+            </li>
+            <li class="sorting__by-text ">
+              <label>
+                <input class="radio__input descending visually-hidden" type="radio" name="sorting-by-age">
+                <span class="radio__text">по убыванию</span>
+              </label>
+            </li>
           </ul>
+
         </div>
       </nav>
 
