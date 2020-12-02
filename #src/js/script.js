@@ -1,8 +1,25 @@
 ; (function () {
   let body = document.querySelector('body');
-  let arrowUp = document.querySelector('.up-btn');
+  let catalogProducts = body.querySelector('.catalog__products');
+  let allItems = catalogProducts.querySelectorAll('.products__item');
+  let arrNoneSorted = [];
+  const lastItem = allItems.length;
+  let arrowUp = body.querySelector('.up-btn');
+  let lastIndex = 6;
 
-  let catalogProducts = document.querySelector('.catalog__products');
+  function removeChildren(item) {
+    while (item.firstChild) {
+      item.removeChild(item.firstChild);
+    }
+  }
+
+  function updateChildren(item, children) {
+    removeChildren(item);
+    for (var i = 0; i < children.length; i += 1) {
+      item.appendChild(children[i]);
+    }
+  }
+
 
   function minMax(arr, dataAttr) {
     let min;
@@ -23,55 +40,35 @@
         max = dataAttrNumber;
       }
     }
-
     return [min, max];
   }
 
-  let removeChildren = function (item) {
-    while (item.firstChild) {
-      item.removeChild(item.firstChild);
-    }
-  }
-  let updateChildren = function (item, children) {
-    removeChildren(item);
-    for (var i = 0; i < children.length; i += 1) {
-      item.appendChild(children[i]);
-    }
-  }
+  function sortingBy(dataAttr, noneSortedArray) {
 
-  function sortingBy(dataAttr) {
-    let productItems = body.querySelectorAll('.products__item');
-
+    let min = minMax(noneSortedArray, dataAttr)[0];
+    let arr = [];
     let arrSorted = [];
-    let arrNoneSorted = [];
 
-    let min = minMax(productItems, dataAttr)[0];
-
-
-    for (let i = 0; i < productItems.length; i++) {
-      let current = productItems[i];
-
+    for (let i = 0; i < noneSortedArray.length; i++) {
+      let current = noneSortedArray[i];
       let currentDataAttr = current.getAttribute(dataAttr);
       let currentAttrNumber = Number(currentDataAttr);
-
       if (currentAttrNumber === min) {
         arrSorted.push(current);
       } else {
-        arrNoneSorted.push(current);
+        arr.push(current);
       }
     }
 
-    while (arrNoneSorted.length !== 0) {
-      min = minMax(arrNoneSorted, dataAttr)[0];
-
-      for (let i = 0; i < arrNoneSorted.length; i++) {
-        let current = arrNoneSorted[i];
+    while (arr.length !== 0) {
+      min = minMax(arr, dataAttr)[0];
+      for (let i = 0; i < arr.length; i++) {
+        let current = arr[i];
         let currentDataAttr = current.getAttribute(dataAttr);
         let currentAttrNumber = Number(currentDataAttr);
-
         if (currentAttrNumber === min) {
           arrSorted.push(current);
-          arrNoneSorted.splice(i, 1);
+          arr.splice(i, 1);
           i = -1;
         }
       }
@@ -80,51 +77,37 @@
     return arrSorted;
   }
 
-  function sortingByDescending(dataAttr) {
-    let arrSorted = sortingBy(dataAttr).reverse();
-
+  function sortingByDescending(dataAttr, noneSortedArray) {
+    let arrSorted = sortingBy(dataAttr, noneSortedArray).reverse();
     updateChildren(catalogProducts, arrSorted);
   }
 
-  function sortingByAscending(dataAttr) {
-    let arrSorted = sortingBy(dataAttr);
-
+  function sortingByAscending(dataAttr, noneSortedArray) {
+    let arrSorted = sortingBy(dataAttr, noneSortedArray);
     updateChildren(catalogProducts, arrSorted);
   }
 
-  function insertAttribute() {
-    let productItems = body.querySelectorAll('.products__item');
+  function isRadioButtonStatus() {
+    let priceAscending = document.getElementById('price__ascending');
+    let priceDescending = document.getElementById('price__descending');
+    let ageAscending = document.getElementById('age__ascending');
+    let ageDescending = document.getElementById('age__descending');
 
-    for (let i = 0; i < productItems.length; i++) {
-      let current = productItems[i];
-
-      let year = current.querySelector('.count__number-year').textContent;
-      if (year.length !== 0) {
-        year = Number(year) * 12;
-      }
-      else {
-        year = Number(year);
-      }
-
-      let month = current.querySelector('.count__number-month').textContent;
-      if (month.length === 0) {
-        month = 0;
-      }
-      else {
-        month = Number(month);
-      }
-
-      let ageInMonth = Number(year) + Number(month);
-
-      let priceString = current.querySelector('.product__prise-number').textContent;
-      let price = priceString.split(' ').join('');
-
-      current.setAttribute('data-age', ageInMonth);
-      current.setAttribute('data-price', price);
+    if (priceAscending.checked) {
+      sortingByAscending('data-price', arrNoneSorted);
+    }
+    if (priceDescending.checked) {
+      sortingByDescending('data-price', arrNoneSorted);
+    }
+    if (ageAscending.checked) {
+      sortingByAscending('data-age', arrNoneSorted);
+    }
+    if (ageDescending.checked) {
+      sortingByDescending('data-age', arrNoneSorted);
     }
   }
 
-  let closestItemByClass = function (item, className) {
+  function closestItemByClass(item, className) {
     let node = item;
     while (node) {
       if (node.classList.contains(className)) {
@@ -135,8 +118,68 @@
     return null;
   }
 
-  function isVisibilityHidden() {
+  function cleanVisuallyHidden() {
+    for (let i = 0; i < lastItem; i++) {
+      if (allItems[i].classList.contains('visually-hidden')) {
+        allItems[i].classList.remove('visually-hidden');
+      }
+    }
+  }
 
+  function countOfProductItemsOnPage() {
+    cleanVisuallyHidden();
+    if (lastItem > lastIndex) {
+      for (let i = lastIndex; i < lastItem; i++) {
+        allItems[i].classList.add('visually-hidden');
+      }
+      for (let i = 0; i < lastIndex; i++) {
+        arrNoneSorted[i] = allItems[i];
+      }
+      isRadioButtonStatus();
+
+    }
+
+  }
+
+  function insertAttribute() {
+    for (let i = 0; i < lastItem; i++) {
+      let current = allItems[i];
+      let year = current.querySelector('.count__number-year').textContent;
+      if (year.length !== 0) {
+        year = Number(year) * 12;
+      }
+      else {
+        year = Number(year);
+      }
+      let month = current.querySelector('.count__number-month').textContent;
+      if (month.length === 0) {
+        month = 0;
+      }
+      else {
+        month = Number(month);
+      }
+      let ageInMonth = Number(year) + Number(month);
+      let priceString = current.querySelector('.product__prise-number').textContent;
+      let price = priceString.split(' ').join('');
+
+      current.setAttribute('data-age', ageInMonth);
+      current.setAttribute('data-price', price);
+    }
+  }
+
+  function scroll(target) {
+    let targetTop = target.getBoundingClientRect().top;
+    let scrollTop = window.pageYOffset;
+    let targetOffsetTop = targetTop + scrollTop;
+
+    window.scrollTo(0, targetOffsetTop,
+      {
+        behavior: 'smooth'
+      }
+    );
+  }
+
+  function isVisibilityHidden() {
     let windowInnerHeight = window.innerHeight || document.documentElement.scrollTop;
     let scrollTop = window.pageYOffset;
     let scrollBottom = windowInnerHeight + scrollTop;
@@ -154,48 +197,37 @@
     }
   }
 
-  let scroll = function (target) {
-    let targetTop = target.getBoundingClientRect().top;
-    let scrollTop = window.pageYOffset;
-    let targetOffsetTop = targetTop + scrollTop;
-
-    window.scrollTo(0, targetOffsetTop,
-      {
-        behavior: 'smooth'
-      }
-    );
-  }
-
-
-  window.addEventListener('load', function () {
-
-    isVisibilityHidden();
-    insertAttribute();
-
-    let catalog = document.querySelector('.catalog__products');
-
-    let productsBtn = catalog.querySelectorAll('.products__btn');
-
+  function isDisabledButtons() {
+    let productsBtn = catalogProducts.querySelectorAll('.products__btn');
     for (let i = 0; i < productsBtn.length; i++) {
       let current = productsBtn[i];
-
       if (current.classList.contains('is-disabled')) {
         current.textContent = 'Продан';
       }
     }
+  }
 
-  });
+
+
+  document.addEventListener('mousedown', e => e.preventDefault());
+
+  window.addEventListener('load', function () {
+
+    isDisabledButtons();
+    isVisibilityHidden();
+    insertAttribute();
+    countOfProductItemsOnPage();
+  })
 
   window.addEventListener('resize', isVisibilityHidden);
   window.addEventListener('scroll', isVisibilityHidden);
-  document.addEventListener('mousedown', e => e.preventDefault())
+
   body.addEventListener('click', function (e) {
     let target = e.target;
-
     let scrollToItemClass = target.getAttribute('data-scroll-to');
+    let showMoreButton = closestItemByClass(target, 'more-items__btn');
     let arrowDownButton = closestItemByClass(target, 'sorting__icon');
     let likeButton = closestItemByClass(target, 'like-btn');
-
 
     if (scrollToItemClass !== null) {
       e.preventDefault();
@@ -204,41 +236,36 @@
         scroll(scrollToItem);
       }
     }
-
+    if (showMoreButton) {
+      lastIndex = lastIndex + 20;
+      countOfProductItemsOnPage();
+      if (lastItem < lastIndex) {
+        showMoreButton.textContent = 'Вы пpосмотрели всех котэ';
+        showMoreButton.disabled = true;
+        for (let i = 0; i < lastItem; i++) {
+          arrNoneSorted[i] = allItems[i];
+        }
+        isRadioButtonStatus();
+      }
+    }
     if (arrowDownButton) {
       let parentBlockSortingByItem = closestItemByClass(target, 'sorting__by-item');
       let chooseList = parentBlockSortingByItem.querySelector('.sorting__choose-box');
       chooseList.classList.toggle('visibility-hidden');
-
       let isVisHidden = chooseList.classList.contains('visibility-hidden');
-
       if (isVisHidden === false) {
 
         chooseList.addEventListener('click', function () {
-          let priceAscending = document.getElementById('price__ascending');
-          let priceDescending = document.getElementById('price__descending');
-          let ageAscending = document.getElementById('age__ascending');
-          let ageDescending = document.getElementById('age__descending');
-
-          if (priceAscending.checked) {
-            sortingByAscending('data-price');
-          }
-          if (priceDescending.checked) {
-            sortingByDescending('data-price');
-          }
-          if (ageAscending.checked) {
-            sortingByAscending('data-age');
-          }
-          if (ageDescending.checked) {
-            sortingByDescending('data-age');
-          }
+          isRadioButtonStatus();
+          chooseList.classList.add('visibility-hidden');
+          chooseList.removeEventListener('click', function () { })
         })
       }
     }
-
     if (likeButton) {
       likeButton.classList.toggle('like-btn--is-active');
     }
 
   })
+
 })();

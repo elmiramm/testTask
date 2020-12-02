@@ -229,6 +229,8 @@ h5 {
   flex-wrap: wrap;
   justify-content: space-between;
   &__item {
+    display: flex;
+    flex-direction: column;
     position: relative;
     max-width: 380px;
     background-color: #f3f3f3;
@@ -264,6 +266,24 @@ h5 {
         background-image: url(../img/icons/like--is-active-focus.svg);
         outline: none;
       }
+      &--is-active {
+        &::before {
+          content: "Добавлено в 'Избранное'";
+          position: absolute;
+          background-color: #f3f3f3;
+          color: #183c4e;
+          border-radius: 5px;
+          width: 150px;
+          font-size: 16px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          padding: 5px;
+          opacity: 0;
+          right: 0;
+          top: 55px;
+          animation: fade 2s linear;
+        }
+      }
     }
 
     &--before::before {
@@ -285,6 +305,9 @@ h5 {
 
   &__content {
     padding: 25px 28px 22px 29px;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
   }
   &__title {
     margin: 0 0 21px;
@@ -293,6 +316,7 @@ h5 {
   }
   &__description {
     display: flex;
+    flex-grow: 1;
     justify-content: flex-start;
     position: relative;
     margin-left: 22px;
@@ -322,6 +346,7 @@ h5 {
     font-size: 16px;
     font-weight: 700;
   }
+
   &__price-text {
     font-weight: 700;
     font-size: 24px;
@@ -453,6 +478,7 @@ h5 {
 .visibility-hidden {
   visibility: hidden;
   opacity: 0;
+  display: none;
 }
 .visually-hidden {
   position: absolute;
@@ -463,4 +489,22 @@ h5 {
   padding: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 0;
+  }
 }
