@@ -120,8 +120,8 @@
 
   function cleanVisuallyHidden() {
     for (let i = 0; i < lastItem; i++) {
-      if (allItems[i].classList.contains('visually-hidden')) {
-        allItems[i].classList.remove('visually-hidden');
+      if (allItems[i].classList.contains('visibility-hidden')) {
+        allItems[i].classList.remove('visibility-hidden');
       }
     }
   }
@@ -130,7 +130,7 @@
     cleanVisuallyHidden();
     if (lastItem > lastIndex) {
       for (let i = lastIndex; i < lastItem; i++) {
-        allItems[i].classList.add('visually-hidden');
+        allItems[i].classList.add('visibility-hidden');
       }
       for (let i = 0; i < lastIndex; i++) {
         arrNoneSorted[i] = allItems[i];
@@ -241,6 +241,7 @@
       }
     }
     if (showMoreButton) {
+      e.preventDefault();
       lastIndex = lastIndex + 20;
       countOfProductItemsOnPage();
       if (lastItem < lastIndex) {
@@ -253,11 +254,13 @@
       }
     }
     if (arrowDownButton) {
+      e.preventDefault();
       let parentBlockSortingByItem = closestItemByClass(target, 'sorting__by-item');
       let chooseList = parentBlockSortingByItem.querySelector('.sorting__choose-box');
       chooseList.classList.toggle('visibility-hidden');
     }
     if (likeButton) {
+      e.preventDefault();
       likeButton.classList.toggle('like-btn--is-active');
     }
     if (btn) {
