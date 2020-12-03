@@ -253,7 +253,8 @@ h5 {
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-right: -20px;
 }
 
 .products__item {
@@ -262,7 +263,7 @@ h5 {
   position: relative;
   max-width: 380px;
   background-color: #f3f3f3;
-  margin-bottom: 24px;
+  margin: 0 20px 24px 0;
 }
 
 .products__item .like-btn {
