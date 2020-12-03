@@ -50,16 +50,16 @@
           <button class="sorting__icon">
             <img src="img/icons/down-arrow.svg" alt="Выбрать">
           </button>
-          <ul class="sorting__choose-box visibility-hidden">
-            <li class="sorting__by-text">
+          <div class="sorting__choose-box visibility-hidden">
+            <button class="sorting__by-btn">
               <input class="radio__input visually-hidden" type="radio" name="sorting-by" id="price__ascending">
               <label class="radio__text" for="price__ascending">по возрастанию</label>
-            </li>
-            <li class="sorting__by-text">
+            </button>
+            <button class="sorting__by-btn">
               <input class="radio__input visually-hidden" type="radio" name="sorting-by" id="price__descending">
               <label class="radio__text" for="price__descending">по убыванию</label>
-            </li>
-          </ul>
+            </button>
+          </div>
         </div>
 
         <div class="sorting__by-item age">
@@ -67,16 +67,16 @@
           <button class="sorting__icon">
             <img src="img/icons/down-arrow.svg" alt="Выбрать">
           </button>
-          <ul class="sorting__choose-box visibility-hidden">
-            <li class="sorting__by-text ">
+          <div class="sorting__choose-box visibility-hidden">
+            <button class="sorting__by-btn ">
               <input class="radio__input  visually-hidden" type="radio" name="sorting-by" id="age__ascending">
               <label class="radio__text" for="age__ascending">по возрастанию</label>
-            </li>
-            <li class="sorting__by-text ">
+            </button>
+            <button class="sorting__by-btn">
               <input class="radio__input visually-hidden" type="radio" name="sorting-by" id="age__descending">
               <label class="radio__text" for="age__descending">по убыванию</label>
-            </li>
-          </ul>
+            </button>
+          </div>
 
         </div>
       </nav>
@@ -2383,7 +2383,7 @@
         </div>
         <form action="#" class="subscription__form footer__right-elements" method="POST">
           <div class="right-elements__top">
-            <input type="email" placeholder="Email">
+            <input class="mail-input" type="email" placeholder="Email">
             <button class="subscription__btn btn" type="button">Подписаться</button>
           </div>
           <div class="right-elements__bottom">

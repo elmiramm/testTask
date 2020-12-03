@@ -136,9 +136,7 @@
         arrNoneSorted[i] = allItems[i];
       }
       isRadioButtonStatus();
-
     }
-
   }
 
   function insertAttribute() {
@@ -207,9 +205,14 @@
     }
   }
 
-
-
-  document.addEventListener('mousedown', e => e.preventDefault());
+  document.addEventListener('mousedown', function (e) {
+    let target = e.target;
+    let mailInput = closestItemByClass(target, 'mail-input');
+    console.log(mailInput);
+    if (mailInput === null) {
+      e.preventDefault();
+    }
+  });
 
   window.addEventListener('load', function () {
 
@@ -228,6 +231,7 @@
     let showMoreButton = closestItemByClass(target, 'more-items__btn');
     let arrowDownButton = closestItemByClass(target, 'sorting__icon');
     let likeButton = closestItemByClass(target, 'like-btn');
+    let btn = closestItemByClass(target, 'sorting__by-btn');
 
     if (scrollToItemClass !== null) {
       e.preventDefault();
@@ -252,20 +256,16 @@
       let parentBlockSortingByItem = closestItemByClass(target, 'sorting__by-item');
       let chooseList = parentBlockSortingByItem.querySelector('.sorting__choose-box');
       chooseList.classList.toggle('visibility-hidden');
-      let isVisHidden = chooseList.classList.contains('visibility-hidden');
-      if (isVisHidden === false) {
-
-        chooseList.addEventListener('click', function () {
-          isRadioButtonStatus();
-          chooseList.classList.add('visibility-hidden');
-          chooseList.removeEventListener('click', function () { })
-        })
-      }
     }
     if (likeButton) {
       likeButton.classList.toggle('like-btn--is-active');
     }
-
+    if (btn) {
+      e.preventDefault();
+      let radioInput = btn.querySelector('.radio__input');
+      radioInput.checked = true;
+      isRadioButtonStatus();
+    }
   })
 
 })();

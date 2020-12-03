@@ -200,25 +200,27 @@ h5 {
   }
   &__choose-box {
     position: absolute;
-    padding: 10px 0px;
+    padding: 5px 0px;
     background-color: #f3f3f3;
     border-radius: 4px;
-    color: #183c4e;
-    font-size: 16px;
     right: -10px;
     min-width: 170px;
     z-index: 3;
+  }
+  &__by-btn {
+    width: 100%;
+    font-size: 16px;
+    color: #183c4e;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    padding: 5px 0px 5px 10px;
+    text-align: left;
+
     .radio__input:checked + .radio__text {
       font-weight: 700;
     }
-  }
-  &__by-text {
-    & label {
-      display: inline-block;
-      padding: 5px 10px;
-      width: 100%;
-    }
-    :hover {
+
+    &:hover {
       background-color: #183c4e;
       color: #ffffff;
     }
