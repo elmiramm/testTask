@@ -101,11 +101,10 @@ h5 {
 .header__left-elements {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .header__nav {
-  margin: 0 120px 7px;
+  margin-left: 120px;
   min-width: 405px;
 }
 
@@ -114,11 +113,16 @@ h5 {
   flex-direction: column;
   align-items: flex-end;
   margin-top: 15px;
+  min-width: 185px;
 }
 
 .header__phone {
   font-size: 24px;
   font-weight: 700;
+}
+
+.header__phone-icon {
+  display: none;
 }
 
 .header__found-text {
@@ -127,13 +131,27 @@ h5 {
   margin: 6px 0 6px -2px;
 }
 
+.logo {
+  width: 78px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.header__burger {
+  display: none;
+}
+
 .list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .list__item {
   position: relative;
+  margin: 10px;
 }
 
 .list__item-link::before {
@@ -587,6 +605,85 @@ h5 {
     opacity: 0;
   }
 }
+
+@media all and (max-width: 1280px) {
+  .header__found-text {
+    font-size: 3vw;
+  }
+
+  .header__phone {
+    font-size: 1.8vw;
+  }
+
+  .header__contacts {
+    margin-top: 0;
+  }
+
+  .header {
+    min-height: 200px;
+    padding-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .header {
+    min-height: 150px;
+  }
+
+  .contacts__text {
+    display: none;
+  }
+
+  .header__contacts {
+    min-width: 100px;
+  }
+
+  .header__phone {
+    display: none;
+  }
+
+  .header__phone-icon {
+    display: block;
+    margin-top: 3px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .header__left-elements {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header__contacts {
+    display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
+
+  .logo {
+    width: 10vw;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header__found-text {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 52px;
+  }
+}
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
 .catalog__container .up-btn{background-image:url(../img/icons/up-arrow.svg)}
@@ -596,4 +693,36 @@ h5 {
 .products__item .like-btn--is-active,.products__item .like-btn--is-active:hover{background-image:url(../img/icons/like--is-active.svg)}
 .products__item .like-btn--is-active:focus{background-image:url(../img/icons/like--is-active-focus.svg)}
 .check__input:checked + .check__box{background-image:url(../img/icons/check-mark.svg)}
+}
+
+ @media all and (max-width: 1280px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media all and (max-width: 1000px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media all and (max-width: 800px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media all and (max-width: 600px){
+
+@supports (-webkit-appearance:none){
+
+}
+
 }
