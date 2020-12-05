@@ -232,6 +232,8 @@
     let arrowDownButton = closestItemByClass(target, 'sorting__icon');
     let likeButton = closestItemByClass(target, 'like-btn');
     let btn = closestItemByClass(target, 'sorting__by-btn');
+    let burger = closestItemByClass(target, 'header__burger');
+
 
     if (scrollToItemClass !== null) {
       e.preventDefault();
@@ -268,6 +270,15 @@
       let radioInput = btn.querySelector('.radio__input');
       radioInput.checked = true;
       isRadioButtonStatus();
+    }
+    if (burger) {
+      let burgerDependentElementsNav = body.querySelector('.header__nav');
+      let burgerDependentElementsContacts = body.querySelector('.header__contacts');
+
+      burgerDependentElementsContacts.classList.toggle('header__burger--is-active');
+      burgerDependentElementsNav.classList.toggle('header__burger--is-active');
+
+
     }
   })
 

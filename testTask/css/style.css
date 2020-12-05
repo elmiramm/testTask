@@ -212,6 +212,7 @@ h5 {
 .catalog__sorting {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
   margin: 37px 0px;
   align-self: flex-start;
@@ -286,56 +287,8 @@ h5 {
   margin: 0 20px 24px 0;
 }
 
-.products__item .like-btn {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  background-image: url(../img/icons/like.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-  width: 46px;
-  height: 42px;
-  top: 34px;
-  right: 32px;
-  cursor: pointer;
-}
-
-.products__item .like-btn:hover {
-  background-image: url(../img/icons/like--is-hover.svg);
-}
-
-.products__item .like-btn:focus {
-  background-image: url(../img/icons/like--is-focus.svg);
-  outline: none;
-}
-
-.products__item .like-btn--is-active,
-.products__item .like-btn--is-active:hover {
-  background-image: url(../img/icons/like--is-active.svg);
-}
-
-.products__item .like-btn--is-active:focus {
-  background-image: url(../img/icons/like--is-active-focus.svg);
-  outline: none;
-}
-
-.products__item .like-btn--is-active::before {
-  content: "Добавлено в 'Избранное'";
-  position: absolute;
-  background-color: #f3f3f3;
-  color: #183c4e;
-  border-radius: 5px;
-  width: 150px;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  padding: 5px;
-  opacity: 0;
-  right: 0;
-  top: 55px;
-  -webkit-animation: fade 2s linear;
-          animation: fade 2s linear;
+.products__item img {
+  width: 100%;
 }
 
 .products__item--before::before {
@@ -392,17 +345,17 @@ h5 {
 
 .products__description-item + .products__description-item {
   margin-left: 31px;
-  margin-right: 19px;
 }
 
-.products .flex--column {
-  display: flex;
-  flex-direction: column;
+.products__description-item:last-child {
+  margin-left: 40px;
 }
 
-.products .count-age {
+.products .count-age,
+.products .count {
   font-size: 16px;
   font-weight: 700;
+  display: block;
 }
 
 .products__price-text {
@@ -424,6 +377,58 @@ h5 {
 .products__btn:focus {
   background-color: #183c4e;
   outline: none;
+}
+
+.like-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  background-image: url(../img/icons/like.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 46px;
+  height: 42px;
+  top: 34px;
+  right: 32px;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  background-image: url(../img/icons/like--is-hover.svg);
+}
+
+.like-btn:focus {
+  background-image: url(../img/icons/like--is-focus.svg);
+  outline: none;
+}
+
+.like-btn--is-active,
+.like-btn--is-active:hover {
+  background-image: url(../img/icons/like--is-active.svg);
+}
+
+.like-btn--is-active:focus {
+  background-image: url(../img/icons/like--is-active-focus.svg);
+  outline: none;
+}
+
+.like-btn--is-active::before {
+  content: "Добавлено в 'Избранное'";
+  position: absolute;
+  background-color: #f3f3f3;
+  color: #183c4e;
+  border-radius: 5px;
+  width: 150px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  padding: 5px;
+  opacity: 0;
+  right: 0;
+  top: 55px;
+  -webkit-animation: fade 2s linear;
+          animation: fade 2s linear;
 }
 
 .btn {
@@ -625,6 +630,30 @@ h5 {
   }
 }
 
+@media all and (max-width: 1279px) {
+  .products {
+    justify-content: center;
+  }
+
+  .products__item {
+    max-width: 320px;
+  }
+
+  .like-btn {
+    width: 40px;
+    height: 36px;
+    top: 29px;
+    right: 28px;
+    background-size: contain;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .products__item {
+    max-width: 280px;
+  }
+}
+
 @media all and (max-width: 1000px) {
   .header {
     min-height: 150px;
@@ -658,20 +687,65 @@ h5 {
     justify-content: space-between;
   }
 
-  .header__contacts {
-    display: none;
-  }
-
-  .header__nav {
-    display: none;
+  .logo {
+    width: 10vw;
   }
 
   .header__burger {
     display: block;
   }
 
-  .logo {
-    width: 10vw;
+  .header__nav {
+    display: block;
+    position: absolute;
+    right: -100%;
+    top: 120px;
+    margin-left: 0px;
+    min-width: 100px;
+    width: 40vw;
+    z-index: 10;
+    transition: 0.3s ease 0s;
+  }
+
+  .header__nav.header__burger--is-active {
+    right: 0px;
+  }
+
+  .list {
+    flex-direction: column;
+    background-color: #000000;
+  }
+
+  .header__contacts {
+    display: block;
+    position: absolute;
+    right: -100%;
+    transition: 0.3s ease 0s;
+  }
+
+  .header__contacts.header__burger--is-active {
+    right: 0px;
+  }
+
+  .header__phone {
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    width: 220px;
+    top: 28px;
+    right: 40px;
+    text-align: right;
+  }
+
+  .header__phone-icon {
+    position: absolute;
+    right: 20px;
+    top: 26px;
+    width: 15px;
+  }
+
+  .header__phone-icon img {
+    width: 100%;
   }
 }
 
@@ -683,19 +757,87 @@ h5 {
   .logo {
     width: 52px;
   }
+
+  .header__nav {
+    top: 110px;
+    width: 50vw;
+  }
+
+  .catalog__sorting {
+    margin: 25px 0px;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .sorting__by-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .sorting__by-item + .sorting__by-item {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .sorting__text {
+    margin-right: 5px;
+  }
+
+  .sorting__icon {
+    padding: 0px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .header__top {
+    padding: 7px 0;
+  }
+
+  .header__found {
+    margin-top: 21px;
+  }
+
+  .header__nav {
+    top: 88px;
+  }
+
+  .catalog__sorting {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .header__nav {
+    width: 100vw;
+  }
 }
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
 .catalog__container .up-btn{background-image:url(../img/icons/up-arrow.svg)}
-.products__item .like-btn{background-image:url(../img/icons/like.svg)}
-.products__item .like-btn:hover{background-image:url(../img/icons/like--is-hover.svg)}
-.products__item .like-btn:focus{background-image:url(../img/icons/like--is-focus.svg)}
-.products__item .like-btn--is-active,.products__item .like-btn--is-active:hover{background-image:url(../img/icons/like--is-active.svg)}
-.products__item .like-btn--is-active:focus{background-image:url(../img/icons/like--is-active-focus.svg)}
+.like-btn{background-image:url(../img/icons/like.svg)}
+.like-btn:hover{background-image:url(../img/icons/like--is-hover.svg)}
+.like-btn:focus{background-image:url(../img/icons/like--is-focus.svg)}
+.like-btn--is-active,.like-btn--is-active:hover{background-image:url(../img/icons/like--is-active.svg)}
+.like-btn--is-active:focus{background-image:url(../img/icons/like--is-active-focus.svg)}
 .check__input:checked + .check__box{background-image:url(../img/icons/check-mark.svg)}
 }
 
  @media all and (max-width: 1280px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media all and (max-width: 1279px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media all and (max-width: 1100px){
 
 @supports (-webkit-appearance:none){
 
@@ -720,6 +862,30 @@ h5 {
 }
 
  @media all and (max-width: 600px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media all and (max-width: 550px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media all and (max-width: 480px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media all and (max-width: 320px){
 
 @supports (-webkit-appearance:none){
 
