@@ -440,10 +440,8 @@ h5 {
   }
   &__description {
     display: flex;
-    flex-grow: 1;
     justify-content: flex-start;
     position: relative;
-    margin-left: 22px;
     margin-bottom: 21px;
     &::before {
       content: "";
@@ -452,15 +450,17 @@ h5 {
       position: absolute;
       background-color: #6ebbd3;
       top: 3px;
-      left: -22px;
     }
     &-item {
       font-size: 12px;
+      &:first-child span {
+        display: block;
+      }
       & + & {
-        margin-left: 31px;
+        margin-left: 0px;
       }
       &:last-child {
-        margin-left: 40px;
+        margin-left: 0px;
       }
     }
   }
@@ -478,7 +478,6 @@ h5 {
   }
   &__btn {
     width: 100%;
-
     padding: 21px 0px 24px;
     border-radius: 0px 0px 10px 10px;
     margin-top: 7px;

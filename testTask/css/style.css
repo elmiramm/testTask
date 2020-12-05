@@ -322,10 +322,8 @@ h5 {
 
 .products__description {
   display: flex;
-  flex-grow: 1;
   justify-content: flex-start;
   position: relative;
-  margin-left: 22px;
   margin-bottom: 21px;
 }
 
@@ -336,19 +334,22 @@ h5 {
   position: absolute;
   background-color: #6ebbd3;
   top: 3px;
-  left: -22px;
 }
 
 .products__description-item {
   font-size: 12px;
 }
 
+.products__description-item:first-child span {
+  display: block;
+}
+
 .products__description-item + .products__description-item {
-  margin-left: 31px;
+  margin-left: 0px;
 }
 
 .products__description-item:last-child {
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 .products .count-age,
