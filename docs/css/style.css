@@ -293,7 +293,7 @@ h5 {
   color: #ffffff;
   top: 34px;
   left: 38px;
-  z-index: 5;
+  z-index: 2;
   background-color: #e52d2d;
   min-width: 78px;
   min-height: 39px;
@@ -761,6 +761,10 @@ h5 {
     top: 12px;
     right: 12px;
   }
+
+  .like-btn--is-active + .like-btn__text-after {
+    top: 78px;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -924,17 +928,24 @@ h5 {
     flex-basis: 100%;
   }
 
-  .sorting__by-item + .sorting__by-item {
-    margin-left: 25px;
-    margin-top: 10px;
-  }
-
   .sorting__text {
     margin-right: 5px;
   }
 
   .sorting__icon {
     padding: 0px;
+  }
+
+  .sorting__choose-box {
+    padding: 5px 0px;
+    right: -11px;
+    min-width: 130px;
+  }
+
+  .sorting__by-btn {
+    font-size: 13px;
+    padding: 5px 10px 5px 5px;
+    text-align: right;
   }
 }
 
@@ -959,6 +970,10 @@ h5 {
     font-size: 18px;
   }
 
+  .sorting__by-item + .sorting__by-item {
+    margin-left: 30px;
+  }
+
   .products__content {
     padding: 20px;
   }
@@ -970,6 +985,10 @@ h5 {
 
   .products__btn {
     margin-top: 0px;
+  }
+
+  .like-btn--is-active + .like-btn__text-after {
+    top: 60px;
   }
 
   .footer__container {
@@ -996,6 +1015,16 @@ h5 {
     min-width: 70%;
     padding: 20px;
   }
+}
+
+@media all and (max-width: 320px) {
+  .header__nav {
+    width: 100vw;
+  }
+
+  .products__content {
+    padding: 12px;
+  }
 
   .footer__container {
     padding: 15px;
@@ -1018,16 +1047,6 @@ h5 {
 
   .footer__right-elements .right-elements__top button {
     padding: 10px;
-  }
-}
-
-@media all and (max-width: 320px) {
-  .header__nav {
-    width: 100vw;
-  }
-
-  .products__content {
-    padding: 12px;
   }
 }
 @supports (-webkit-appearance:none){
