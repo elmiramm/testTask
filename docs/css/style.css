@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @font-face {
   font-family: "Montserrat";
   font-display: swap;
@@ -182,9 +180,6 @@ h5 {
 }
 
 .catalog__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 47px;
   position: relative;
 }
@@ -420,8 +415,12 @@ h5 {
   outline: none;
 }
 
-.like-btn--is-active::before {
-  content: "Добавлено в 'Избранное'";
+.like-btn + .like-btn__text-after {
+  display: none;
+}
+
+.like-btn--is-active + .like-btn__text-after {
+  display: block;
   position: absolute;
   background-color: #f3f3f3;
   color: #183c4e;
@@ -430,10 +429,11 @@ h5 {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  text-align: center;
   padding: 5px;
   opacity: 0;
-  right: 0;
-  top: 55px;
+  right: 10px;
+  top: 90px;
   -webkit-animation: fade 2s linear;
           animation: fade 2s linear;
 }
@@ -445,7 +445,13 @@ h5 {
   border: none;
 }
 
+.width--100 {
+  width: 100%;
+}
+
 .more-items__btn {
+  display: block;
+  margin: 0 auto;
   border-radius: 10px;
   border: 1px solid #cacaca;
   width: 380px;
@@ -801,6 +807,7 @@ h5 {
   }
 
   .header__left-elements {
+    display: block;
     width: 100%;
     justify-content: space-between;
   }
@@ -811,14 +818,16 @@ h5 {
 
   .header__burger {
     display: block;
+    position: absolute;
+    right: 5%;
+    top: 29%;
   }
 
   .header__nav {
-    display: block;
     position: absolute;
     right: -100%;
+    overflow-x: hidden;
     top: 120px;
-    margin-left: 0px;
     min-width: 100px;
     width: 40vw;
     z-index: 10;
@@ -835,7 +844,6 @@ h5 {
   }
 
   .header__contacts {
-    display: block;
     position: absolute;
     right: -100%;
     transition: 0.3s ease 0s;
@@ -933,6 +941,10 @@ h5 {
 @media all and (max-width: 480px) {
   .header__top {
     padding: 7px 0;
+  }
+
+  .header__burger {
+    top: 17%;
   }
 
   .header__found {

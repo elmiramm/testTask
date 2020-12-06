@@ -163,6 +163,7 @@ h5 {
     padding: 0 30px;
   }
   .header__left-elements {
+    display: block;
     width: 100%;
     justify-content: space-between;
   }
@@ -171,14 +172,16 @@ h5 {
   }
   .header__burger {
     display: block;
+    position: absolute;
+    right: 5%;
+    top: 29%;
   }
 
   .header__nav {
-    display: block;
     position: absolute;
     right: -100%;
+    overflow-x: hidden;
     top: 120px;
-    margin-left: 0px;
     min-width: 100px;
     width: 40vw;
     z-index: 10;
@@ -193,7 +196,6 @@ h5 {
     background-color: #000000;
   }
   .header__contacts {
-    display: block;
     position: absolute;
     right: -100%;
     transition: 0.3s ease 0s;
@@ -238,6 +240,10 @@ h5 {
   .header__top {
     padding: 7px 0;
   }
+  .header__burger {
+    top: 17%;
+  }
+
   .header__found {
     margin-top: 21px;
   }
@@ -285,9 +291,6 @@ h5 {
 
 .catalog {
   &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 47px;
     position: relative;
     .up-btn {
@@ -527,23 +530,27 @@ h5 {
     background-image: url(../img/icons/like--is-active-focus.svg);
     outline: none;
   }
-  &--is-active {
-    &::before {
-      content: "Добавлено в 'Избранное'";
-      position: absolute;
-      background-color: #f3f3f3;
-      color: #183c4e;
-      border-radius: 5px;
-      width: 150px;
-      font-size: 16px;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      padding: 5px;
-      opacity: 0;
-      right: 0;
-      top: 55px;
-      animation: fade 2s linear;
-    }
+
+  & + .like-btn__text-after {
+    display: none;
+  }
+
+  &--is-active + .like-btn__text-after {
+    display: block;
+    position: absolute;
+    background-color: #f3f3f3;
+    color: #183c4e;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    right: 10px;
+    top: 90px;
+    animation: fade 2s linear;
   }
 }
 
@@ -632,7 +639,12 @@ h5 {
   background-color: #6ebbd3;
   border: none;
 }
+.width--100 {
+  width: 100%;
+}
 .more-items__btn {
+  display: block;
+  margin: 0 auto;
   border-radius: 10px;
   border: 1px solid #cacaca;
   width: 380px;
