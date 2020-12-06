@@ -20,7 +20,7 @@
           <div class="header__burger">
             <img src="img/icons/burger.svg" alt="Логотип">
           </div>
-          <nav class="header__nav header__burger--is-active">
+          <nav class="header__nav">
             <ul class="list">
               <li class="list__item"><a class="list__item-link" href="#">Main</a></li>
               <li class="list__item"><a class="list__item-link" href="#">Gallery</a></li>
@@ -29,7 +29,7 @@
             </ul>
           </nav>
         </div>
-        <div class="header__contacts header__burger--is-active">
+        <div class="header__contacts">
           <a class="header__phone" href="tel:+544349000000">+544 3490 00000</a>
           <span class="contacts__text">Звони скорее!</span>
           <a href="tel:+544349000000" class="header__phone-icon">
@@ -141,11 +141,11 @@
               <p class="products__description-item">
                 <span class="count-age">
                   <span class="block">
-                    <span class="count__number-year"></span>
-                    <span class="count__text-year"></span>
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
                   </span>
                   <span class="block">
-                    <span class="count__number-month">2</span>
+                    <span class="count__number-month">11</span>
                     <span class="count__text-month">мес.</span>
                   </span>
                 </span>
@@ -178,11 +178,11 @@
               <p class="products__description-item">
                 <span class="count-age">
                   <span class="block">
-                    <span class="count__number-year"></span>
-                    <span class="count__text-year"></span>
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
                   </span>
                   <span class="block">
-                    <span class="count__number-month">2</span>
+                    <span class="count__number-month">10</span>
                     <span class="count__text-month">мес.</span>
                   </span>
                 </span>
@@ -215,12 +215,12 @@
               <p class="products__description-item">
                 <span class="count-age">
                   <span class="block">
-                    <span class="count__number-year"></span>
-                    <span class="count__text-year"></span>
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
                   </span>
                   <span class="block">
-                    <span class="count__number-month">2</span>
-                    <span class="count__text-month">мес.</span>
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
                   </span>
                 </span>
                 <span>Возраст</span>
@@ -314,206 +314,7 @@
         </div>
 
         <!-- повторы -->
-        <!--  
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">10</span>
-                  <span class="count__text-year">лет</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
         <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">6</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">11</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">5</span>
-                  <span class="count__text-year">лет</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
           <img src="img/img-cat1.jpg" alt="Кот полосатый">
           <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
           <div class="products__content">
@@ -526,10 +327,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -540,73 +345,7 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">3</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
+                <span class="product__prise-number">30 000</span> руб.
               </p>
             </div>
           </div>
@@ -625,10 +364,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">11</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -639,79 +382,13 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
+                <span class="product__prise-number">40 000</span> руб.
               </p>
             </div>
           </div>
           <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">3</span>
-                  <span class="count__text-year">года</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
           <img src="img/img-cat3.jpg" alt="Кот полосатый">
           <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
           <div class="products__content">
@@ -724,10 +401,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">8</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -738,73 +419,7 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Мне нравиться" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">1</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">10</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
+                <span class="product__prise-number">20 000</span> руб.
               </p>
             </div>
           </div>
@@ -823,10 +438,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year">10</span>
-                  <span class="count__text-year">лет</span>
-                  <span class="count__number-month">10</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -843,8 +462,8 @@
           </div>
           <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
         </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
           <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
           <div class="products__content">
             <h2 class="products__title">
@@ -856,10 +475,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -870,40 +493,7 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
+                <span class="product__prise-number">30 000</span> руб.
               </p>
             </div>
           </div>
@@ -922,76 +512,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year">4</span>
-                  <span class="count__text-year">года</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -1009,105 +537,6 @@
           <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">7</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
           <img src="img/img-cat1.jpg" alt="Кот полосатый">
           <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
           <div class="products__content">
@@ -1120,10 +549,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -1134,73 +567,7 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
+                <span class="product__prise-number">30 000</span> руб.
               </p>
             </div>
           </div>
@@ -1219,10 +586,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">7</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -1233,79 +604,13 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
+                <span class="product__prise-number">40 000</span> руб.
               </p>
             </div>
           </div>
           <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
           <img src="img/img-cat3.jpg" alt="Кот полосатый">
           <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
           <div class="products__content">
@@ -1318,10 +623,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -1332,73 +641,7 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
+                <span class="product__prise-number">20 000</span> руб.
               </p>
             </div>
           </div>
@@ -1417,10 +660,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -1432,204 +679,6 @@
             <div class="products__price">
               <p class="products__price-text">
                 <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Мне нравиться">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
               </p>
             </div>
           </div>
@@ -1648,10 +697,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -1663,138 +716,6 @@
             <div class="products__price">
               <p class="products__price-text">
                 <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
               </p>
             </div>
           </div>
@@ -1813,76 +734,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat2.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -1900,105 +759,6 @@
           <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">30 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
           <img src="img/img-cat1.jpg" alt="Кот полосатый">
           <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
           <div class="products__content">
@@ -2011,10 +771,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2025,73 +789,7 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
-              </p>
-            </div>
-          </div>
-          <button class="products__btn btn" type="button" aria-label="Купить"> Купить</button>
-        </div>
-        <div class="products__item">
-          <img src="img/img-cat1.jpg" alt="Кот полосатый">
-          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
-          <div class="products__content">
-            <h2 class="products__title">
-              Кот полосатый
-            </h2>
-            <div class="products__description">
-              <p class="products__description-item">
-                <span>Коричневый</span>
-                <span>окрас</span></p>
-              <p class="products__description-item">
-                <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
-                </span>
-                <span>Возраст</span>
-              </p>
-              <p class="products__description-item">
-                <span class="count">4</span>
-                <span>Кол-во лап</span>
-              </p>
-            </div>
-            <div class="products__price">
-              <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
+                <span class="product__prise-number">30 000</span> руб.
               </p>
             </div>
           </div>
@@ -2110,10 +808,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2124,11 +826,122 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">10 000</span> руб.
+                <span class="product__prise-number">40 000</span> руб.
               </p>
             </div>
           </div>
           <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item">
           <img src="img/img-cat2.jpg" alt="Кот полосатый">
@@ -2143,10 +956,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2162,6 +979,43 @@
             </div>
           </div>
           <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item">
           <img src="img/img-cat2.jpg" alt="Кот полосатый">
@@ -2176,10 +1030,162 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year">1</span>
-                  <span class="count__text-year">год</span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2197,7 +1203,7 @@
           <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item products__item--before">
-          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
           <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
           <div class="products__content">
             <h2 class="products__title">
@@ -2209,10 +1215,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2227,7 +1237,118 @@
               </p>
             </div>
           </div>
-          <button class="products__btn btn" type="button">Купить</button>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item products__item--before">
           <img src="img/img-cat3.jpg" alt="Кот полосатый">
@@ -2242,10 +1363,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2257,6 +1382,191 @@
             <div class="products__price">
               <p class="products__price-text">
                 <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
               </p>
             </div>
           </div>
@@ -2275,10 +1585,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2296,6 +1610,43 @@
           <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
         </div>
         <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
           <img src="img/img-cat1.jpg" alt="Кот полосатый">
           <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
           <div class="products__content">
@@ -2308,10 +1659,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2322,7 +1677,81 @@
             </div>
             <div class="products__price">
               <p class="products__price-text">
-                <span class="product__prise-number">25 000</span> руб.
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
               </p>
             </div>
           </div>
@@ -2341,10 +1770,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2356,6 +1789,191 @@
             <div class="products__price">
               <p class="products__price-text">
                 <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
               </p>
             </div>
           </div>
@@ -2374,10 +1992,14 @@
                 <span>окрас</span></p>
               <p class="products__description-item">
                 <span class="count-age">
-                  <span class="count__number-year"></span>
-                  <span class="count__text-year"></span>
-                  <span class="count__number-month">2</span>
-                  <span class="count__text-month">мес.</span>
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
                 </span>
                 <span>Возраст</span>
               </p>
@@ -2393,17 +2015,1423 @@
             </div>
           </div>
           <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
-        </div>  -->
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">2</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">3</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">11</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">40 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">10</span>
+                    <span class="count__text-year">лет</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">10</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">20 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat1.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">4</span>
+                    <span class="count__text-year">года</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month"></span>
+                    <span class="count__text-month"></span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">25 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item products__item--before">
+          <img src="img/img-cat3.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year"></span>
+                    <span class="count__text-year"></span>
+                  </span>
+                  <span class="bloc">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">30 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn" type="button" aria-label="Купить">Купить</button>
+        </div>
+        <div class="products__item">
+          <img src="img/img-cat2.jpg" alt="Кот полосатый">
+          <button class="like-btn" type="button" aria-label="Мне нравиться"></button>
+          <div class="products__content">
+            <h2 class="products__title">
+              Кот полосатый
+            </h2>
+            <div class="products__description">
+              <p class="products__description-item">
+                <span>Коричневый</span>
+                <span>окрас</span></p>
+              <p class="products__description-item">
+                <span class="count-age">
+                  <span class="block">
+                    <span class="count__number-year">1</span>
+                    <span class="count__text-year">год</span>
+                  </span>
+                  <span class="block">
+                    <span class="count__number-month">2</span>
+                    <span class="count__text-month">мес.</span>
+                  </span>
+                </span>
+                <span>Возраст</span>
+              </p>
+              <p class="products__description-item">
+                <span class="count">4</span>
+                <span>Кол-во лап</span>
+              </p>
+            </div>
+            <div class="products__price">
+              <p class="products__price-text">
+                <span class="product__prise-number">10 000</span> руб.
+              </p>
+            </div>
+          </div>
+          <button class="products__btn btn is-disabled" disabled type="button" aria-label="Купить">Купить</button>
+        </div>
         <!-- повторы end -->
-        <!--</div>
-  <button class="up-btn btn" type="button" data-scroll-to="top" aria-label="К началу страницы">
-  </button>
-  <button class="more-items__btn btn" type="button" aria-label="Показать еще 20">
-    Показать еще 20
-  </button> -->
       </div>
+      <button class="up-btn btn" type="button" data-scroll-to="top" aria-label="К началу страницы">
+      </button>
+      <button class="more-items__btn btn" type="button" aria-label="Показать еще 20">
+        Показать еще 20
+      </button>
+    </div>
   </section>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer__container">
         <div class="footer__left-elements">
@@ -2428,7 +3456,7 @@
         </form>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   <script src="js/script.min.js"></script>
 </body>

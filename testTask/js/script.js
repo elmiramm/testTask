@@ -278,7 +278,7 @@
       burgerDependentElementsContacts.classList.toggle('header__burger--is-active');
       burgerDependentElementsNav.classList.toggle('header__burger--is-active');
 
-
+      isVisibilityHidden();
     }
   })
 

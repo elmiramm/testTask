@@ -440,6 +440,7 @@ h5 {
   }
   &__description {
     display: flex;
+    flex-grow: 1;
     justify-content: flex-start;
     position: relative;
     margin-bottom: 21px;
@@ -453,14 +454,18 @@ h5 {
     }
     &-item {
       font-size: 12px;
-      &:first-child span {
+      .block {
         display: block;
       }
-      & + & {
-        margin-left: 0px;
+      &:first-child {
+        margin-right: 31px;
+        span {
+          display: block;
+          margin-left: 22px;
+        }
       }
       &:last-child {
-        margin-left: 0px;
+        margin-left: 45px;
       }
     }
   }
@@ -556,11 +561,69 @@ h5 {
     right: 28px;
     background-size: contain;
   }
+  .products__description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    &-item {
+      font-size: 15px;
+      .block {
+        display: block;
+      }
+      &:first-child {
+        margin-left: 22px;
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        margin-top: 6px;
+        span {
+          display: inline-block;
+          margin-left: 0px;
+        }
+      }
+      &:last-child {
+        margin-left: 45px;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1100px) {
   .products__item {
     max-width: 280px;
+  }
+  .products__title {
+    margin: 0px 0 10px;
+  }
+  .products__item--before::before {
+    top: 10px;
+    left: 10px;
+    min-width: 67px;
+  }
+  .like-btn {
+    width: 36px;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .products__content {
+    padding: 20px;
+  }
+  .products__title {
+    margin: 0 0 11px;
+    font-size: 18px;
+  }
+
+  .products__btn {
+    margin-top: 0px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .products__content {
+    padding: 12px;
   }
 }
 .btn {
@@ -579,6 +642,21 @@ h5 {
   margin-bottom: 35px;
   font-size: 14px;
 }
+
+@media all and (max-width: 700px) {
+  .more-items__btn {
+    width: 220px;
+    padding: 15px 0;
+    margin-top: 0px;
+  }
+  .catalog__container .up-btn {
+    bottom: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .is-disabled {
   background-color: #000000;
 }
@@ -635,6 +713,129 @@ h5 {
   &__discription {
     font-size: 28px;
     line-height: 29px;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  .footer__title {
+    font-size: 3.5vw;
+  }
+  &__left-elements {
+    max-width: 40%;
+  }
+  .footer__right-elements {
+    min-width: 60%;
+    & .right-elements__top {
+      input {
+        min-width: 50%;
+        padding-left: 30px;
+        margin-bottom: 20px;
+      }
+      button {
+        min-width: 40%;
+      }
+    }
+  }
+}
+@media all and (max-width: 1150px) {
+  .footer__container {
+    padding: 75px;
+  }
+  .footer__discription {
+    font-size: 20px;
+    line-height: 22px;
+    width: 90%;
+  }
+  .footer__right-elements {
+    min-width: 55%;
+    & .right-elements__top {
+      input {
+        min-width: 80%;
+        margin-left: 0;
+      }
+      button {
+        min-width: 60%;
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 850px) {
+  .footer__title {
+    font-size: 30px;
+  }
+  .footer__container {
+    padding: 55px;
+    flex-direction: column;
+  }
+  .footer__discription {
+    margin-bottom: 30px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .footer__right-elements {
+    & .right-elements__top {
+      input {
+        min-width: 100%;
+        margin-left: 0;
+      }
+      button {
+        min-width: 80%;
+        margin-left: 0px;
+      }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  .footer__container {
+    padding: 20px;
+  }
+  .footer__title {
+    font-size: 25px;
+  }
+  .footer__discription {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .footer__right-elements {
+    & .right-elements__top {
+      input {
+        min-width: 90%;
+        padding: 13px 13px 13px 21px;
+        margin-bottom: 15px;
+      }
+      button {
+        min-width: 70%;
+        padding: 20px;
+      }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  .footer__container {
+    padding: 15px;
+  }
+  .footer__title {
+    font-size: 25px;
+  }
+  .footer__discription {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .footer__right-elements {
+    & .right-elements__top {
+      input {
+        min-width: 100%;
+        padding: 10px 10px 10px 15px;
+      }
+      button {
+        padding: 10px;
+      }
+    }
   }
 }
 
