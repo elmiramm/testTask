@@ -187,10 +187,6 @@ h5 {
 .catalog__container .up-btn {
   position: absolute;
   background-color: #6ebbd3;
-  background-image: url(../img/icons/up-arrow.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
   bottom: 1px;
   right: 51px;
   width: 59px;
@@ -1051,7 +1047,6 @@ h5 {
 }
 @supports (-webkit-appearance:none){
 .header{background-image:url(../img/bg-header.webp)}
-.catalog__container .up-btn{background-image:url(../img/icons/up-arrow.svg)}
 .like-btn{background-image:url(../img/icons/like.svg)}
 .like-btn:hover{background-image:url(../img/icons/like--is-hover.svg)}
 .like-btn:focus{background-image:url(../img/icons/like--is-focus.svg)}

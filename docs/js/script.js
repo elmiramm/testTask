@@ -166,15 +166,9 @@
   }
 
   function scroll(target) {
-    let targetTop = target.getBoundingClientRect().top;
-    let scrollTop = window.pageYOffset;
-    let targetOffsetTop = targetTop + scrollTop;
+    let top = $(target).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
 
-    window.scrollTo(0, targetOffsetTop,
-      {
-        behavior: 'smooth'
-      }
-    );
   }
 
   function isVisibilityHidden() {
@@ -208,7 +202,6 @@
   document.addEventListener('mousedown', function (e) {
     let target = e.target;
     let mailInput = closestItemByClass(target, 'mail-input');
-    console.log(mailInput);
     if (mailInput === null) {
       e.preventDefault();
     }
@@ -227,7 +220,8 @@
 
   body.addEventListener('click', function (e) {
     let target = e.target;
-    let scrollToItemClass = target.getAttribute('data-scroll-to');
+    let scrollToItemClass = closestItemByClass(target, 'page');
+    // let scrollToItemClass = target.getAttribute('data-scroll-to');
     let showMoreButton = closestItemByClass(target, 'more-items__btn');
     let arrowDownButton = closestItemByClass(target, 'sorting__icon');
     let likeButton = closestItemByClass(target, 'like-btn');
@@ -237,7 +231,7 @@
 
     if (scrollToItemClass !== null) {
       e.preventDefault();
-      let scrollToItem = document.querySelector('.' + scrollToItemClass);
+      let scrollToItem = document.querySelector('#top');
       if (scrollToItem) {
         scroll(scrollToItem);
       }
