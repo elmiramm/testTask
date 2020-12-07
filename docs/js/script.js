@@ -165,11 +165,6 @@
     }
   }
 
-  function scroll(target) {
-    let top = $(target).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1500);
-
-  }
 
   function isVisibilityHidden() {
     let windowInnerHeight = window.innerHeight || document.documentElement.scrollTop;
@@ -220,7 +215,6 @@
 
   body.addEventListener('click', function (e) {
     let target = e.target;
-    let scrollToItemClass = closestItemByClass(target, 'up-btn');
 
     let showMoreButton = closestItemByClass(target, 'more-items__btn');
     let arrowDownButton = closestItemByClass(target, 'sorting__icon');
@@ -228,14 +222,6 @@
     let btn = closestItemByClass(target, 'sorting__by-btn');
     let burger = closestItemByClass(target, 'header__burger');
 
-
-    if (scrollToItemClass !== null) {
-      e.preventDefault();
-      let scrollToItem = scrollToItemClass.getAttribute('data-scroll-to');
-      let scrollToItemElement = document.querySelector("." + scrollToItem);
-
-      scroll(scrollToItemElement);
-    }
 
     if (showMoreButton) {
       e.preventDefault();

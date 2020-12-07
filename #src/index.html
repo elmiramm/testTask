@@ -8,7 +8,7 @@
   <title>T-Task</title>
 </head>
 
-<body class="page ">
+<body class="page" id="top">
   <header class="header">
     <div class="container header__container">
       <div class="header__top">
@@ -3513,8 +3513,10 @@
         </div>
         <!-- повторы end -->
       </div>
-      <button class="up-btn btn" type="button" id="up-btn" data-scroll-to="top" aria-label="К началу страницы">
-        <img src="img/icons/up-arrow.svg" alt="К началу страницы">
+      <button class="up-btn btn" type="button" id="up-btn" aria-label="К началу страницы">
+        <a href="#top">
+          <img src="img/icons/up-arrow.svg" alt="К началу страницы">
+        </a>
       </button>
       <div class="width--100">
         <button class="more-items__btn btn" type="button" aria-label="Показать еще 20">
@@ -3550,8 +3552,18 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
   <script src="js/script.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#up-btn").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+          top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 1500);
+      });
+    });
+  </script>
 </body>
 
 </html>
