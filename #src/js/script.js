@@ -220,8 +220,8 @@
 
   body.addEventListener('click', function (e) {
     let target = e.target;
-    let scrollToItemClass = closestItemByClass(target, 'page');
-    // let scrollToItemClass = target.getAttribute('data-scroll-to');
+    let scrollToItemClass = closestItemByClass(target, 'up-btn');
+
     let showMoreButton = closestItemByClass(target, 'more-items__btn');
     let arrowDownButton = closestItemByClass(target, 'sorting__icon');
     let likeButton = closestItemByClass(target, 'like-btn');
@@ -231,11 +231,13 @@
 
     if (scrollToItemClass !== null) {
       e.preventDefault();
-      let scrollToItem = document.querySelector('#top');
-      if (scrollToItem) {
-        scroll(scrollToItem);
-      }
+      let scrollToItem = scrollToItemClass.getAttribute('data-scroll-to');
+      let scrollToItemElement = document.querySelector("." + scrollToItem);
+      console.log(scrollToItemElement);
+
+      scroll(scrollToItemElement);
     }
+    
     if (showMoreButton) {
       e.preventDefault();
       lastIndex = lastIndex + 20;
