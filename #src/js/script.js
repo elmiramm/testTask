@@ -233,11 +233,10 @@
       e.preventDefault();
       let scrollToItem = scrollToItemClass.getAttribute('data-scroll-to');
       let scrollToItemElement = document.querySelector("." + scrollToItem);
-      console.log(scrollToItemElement);
 
       scroll(scrollToItemElement);
     }
-    
+
     if (showMoreButton) {
       e.preventDefault();
       lastIndex = lastIndex + 20;
